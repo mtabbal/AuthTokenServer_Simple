@@ -93,7 +93,7 @@ app.get("/auth-dev", function(req, res) {
 
 // test route to make sure everything is working
 app.get("/", function(req, res) {
-    res.send("TOM I'm alive and at your command");
+    res.send("UCC I'm Maroon alive & at your command ArcDox");
 });
 
 app.listen(process.env.PORT || 5000);
