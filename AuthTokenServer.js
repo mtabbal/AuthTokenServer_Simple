@@ -75,25 +75,25 @@ function getAuthCode(mainResponse, baseUrl, clientId, clientSecret) {
 app.get("/auth", function(req, res) {
     console.log("AuthTokenServer: getting PRODUCTION token...");
         // ***** PUT YOUR PRODUCTION KEYS HERE *****
-    getAuthCode(res, "developer.api.autodesk.com", "MyConsumerKey", "MyConsumerSecret");
+    getAuthCode(res, "developer.api.autodesk.com", "GuS6W0M6mN3f7GKCoICm7vZ39wrAyXJk", "VjiPhyJWaC7NdkGr");
 });
 
 app.get("/auth-stg", function(req, res) {
     console.log("AuthTokenServer: getting STAGING token...");
         // ***** PUT YOUR STAGING KEYS HERE *****
-    getAuthCode(res, "developer-stg.api.autodesk.com", "MyConsumerKey", "MyConsumerSecret");
+    getAuthCode(res, "developer-stg.api.autodesk.com", "GuS6W0M6mN3f7GKCoICm7vZ39wrAyXJk", "VjiPhyJWaC7NdkGr");
 });
 
 app.get("/auth-dev", function(req, res) {
         // need endpoint and keys for DEV
     console.log("AuthTokenServer: getting DEV token...");
         // ***** PUT YOUR DEV KEYS HERE *****
-    getAuthCode(res, "developer-dev.api.autodesk.com", "MyConsumerKey", "MyConsumerSecret");
+    getAuthCode(res, "developer-dev.api.autodesk.com", "GuS6W0M6mN3f7GKCoICm7vZ39wrAyXJk", "VjiPhyJWaC7NdkGr");
 });
 
 // test route to make sure everything is working
 app.get("/", function(req, res) {
-    res.send("I'm alive!");
+    res.send("TOM I'm alive and at your command");
 });
 
 app.listen(process.env.PORT || 5000);
