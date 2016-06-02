@@ -75,25 +75,25 @@ function getAuthCode(mainResponse, baseUrl, clientId, clientSecret) {
 app.get("/auth", function(req, res) {
     console.log("AuthTokenServer: getting PRODUCTION token...");
         // ***** PUT YOUR PRODUCTION KEYS HERE *****
-    getAuthCode(res, "developer.api.autodesk.com", "GuS6W0M6mN3f7GKCoICm7vZ39wrAyXJk", "VjiPhyJWaC7NdkGr");
+    getAuthCode(res, "developer.api.autodesk.com", "C4AqMwkisft7WgyjqWvxjr77mVJhfAHC", "1SCMTOQWqNPrU1uI");
 });
 
 app.get("/auth-stg", function(req, res) {
     console.log("AuthTokenServer: getting STAGING token...");
         // ***** PUT YOUR STAGING KEYS HERE *****
-    getAuthCode(res, "developer-stg.api.autodesk.com", "GuS6W0M6mN3f7GKCoICm7vZ39wrAyXJk", "VjiPhyJWaC7NdkGr");
+    getAuthCode(res, "developer-stg.api.autodesk.com", "C4AqMwkisft7WgyjqWvxjr77mVJhfAHC", "1SCMTOQWqNPrU1uI");
 });
 
 app.get("/auth-dev", function(req, res) {
         // need endpoint and keys for DEV
     console.log("AuthTokenServer: getting DEV token...");
         // ***** PUT YOUR DEV KEYS HERE *****
-    getAuthCode(res, "developer-dev.api.autodesk.com", "GuS6W0M6mN3f7GKCoICm7vZ39wrAyXJk", "VjiPhyJWaC7NdkGr");
+    getAuthCode(res, "developer-dev.api.autodesk.com", "C4AqMwkisft7WgyjqWvxjr77mVJhfAHC", "1SCMTOQWqNPrU1uI");
 });
 
 // test route to make sure everything is working
 app.get("/", function(req, res) {
-    res.send("UCC I'm Maroon alive & at your command ArcDox");
+    res.send("Maroon: alive and at your command");
 });
 
 app.listen(process.env.PORT || 5000);
